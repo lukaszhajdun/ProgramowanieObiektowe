@@ -17,9 +17,17 @@ public class Author {
     public String getEmail(){
         return _email;
     }
-    
+
     public void setEmail(String email){
         _email=email;
+    }
+
+    public Character getGender(){
+        return _gender;
+    }
+
+    public String toString(){
+        return String.format("Author[name=%s,email=%s,gender=%c]", _name, _email, _gender);
     }
 
 
