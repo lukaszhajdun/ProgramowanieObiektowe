@@ -56,9 +56,28 @@ public class Date {
 
     }
 
-//    public String toString(){
-//
-//    }
+    public String toString(){
 
+        StringBuilder sb = new StringBuilder();
+        //Dzien
+        if (_day < 10)
+            sb.append("0").append(_day);
+        else
+            sb.append(_day);
+
+        sb.append("/");
+        //Miesiac
+        if (_month < 10)
+            sb.append("0").append(_month);
+        else
+            sb.append(_month);
+
+        sb.append("/");
+        //Rok
+        sb.append(_year);
+
+        return sb.toString();
+
+    }
 
 }
