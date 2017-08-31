@@ -5,6 +5,6 @@ public class MyCircle {
     private int radius;
 
     public MyCircle(){
-        
+
     }
 }
