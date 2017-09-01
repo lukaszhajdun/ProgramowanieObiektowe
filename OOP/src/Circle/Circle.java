@@ -1,5 +1,7 @@
 package Circle;
 
+import MyPointAndMyCircle.MyPoint;
+
 public class Circle {
     private double _radius = 1.0;
     private String _color = "red";
@@ -22,6 +24,8 @@ public class Circle {
     public void setRadius(double radius){
         _radius = radius;
     }
+
+
 
     public String getColor(){
         return _color;

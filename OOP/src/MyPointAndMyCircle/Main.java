@@ -10,5 +10,11 @@ public class Main {
 
         A.distance(B);
         System.out.println(A.distance(B));
+
+        MyPoint center = new MyPoint(1,1);
+//        MyCircle circle = new MyCircle(center,1); TU SIE SYPIE
+
+        System.out.println(center);
+//        System.out.println(circle);
     }
 }
