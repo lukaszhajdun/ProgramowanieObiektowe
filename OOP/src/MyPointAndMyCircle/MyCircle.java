@@ -5,11 +5,11 @@ public class MyCircle {
     private int _radius;
 
     public MyCircle(){
-
+        _center = new MyPoint(0,0);
     }
     public MyCircle(int x, int y, int radius){
+        _center = new MyPoint(x,y);
 
-//        _center   // TU MAM PROBLEM!!!!!!!!!!
         _radius = radius;
 
     }
@@ -37,11 +37,16 @@ public class MyCircle {
     }
 
     public int getCenterX(){
-        int _x =_center.getX();
-        return _x;
+
+
+        return _center.getX();
     }
 
-//    public
+    public void setCenterX(int x){
+        _center.setX(x);
+    }
+
+
 
 
     public int getCenterY(){
@@ -50,6 +55,6 @@ public class MyCircle {
     }
 
     public String toString(){
-        return String.format("MyCircle[radius=%d, %d",_radius, _center);
+        return String.format("MyCircle[radius=%d, %d]",_radius, _center);
     }
 }

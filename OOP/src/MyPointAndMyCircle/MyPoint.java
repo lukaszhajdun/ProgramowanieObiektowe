@@ -38,6 +38,8 @@ public class MyPoint {
         return String.format("(%d,%d)", _x, _y);
     }
 
+
+//DLACZEGO TAK????????????
     public double calDistance (int x,int y){
         double pX = Math.pow(x - this._x, 2);
         double pY = Math.pow(y - this._y, 2);
