@@ -3,7 +3,6 @@ package AuthorAndBook;
 import org.junit.Assert;
 import org.junit.Test;
 
-
 public class AuthorTest {
 
     Author kowalski = new Author
@@ -30,7 +29,7 @@ public class AuthorTest {
     }
 
     @Test
-    public void AuthorToString() {
+    public void authorToStringTest() {
 
         Assert.assertEquals("Author[name=Kowalski,email=kowalski@wp.pl,gender=m]", kowalski.toString());
     }

@@ -39,7 +39,7 @@ public class Book {
     }
 
     public String toString(){
-        return String.format("Book[name=%s,%s,price=%f,qty=%d]", _name, _author, _price, _qty);
+        return String.format("Book[name=%s,author=%s,price=%f,qty=%d]", _name, _author.getName(), _price, _qty);
     }
 
 }
