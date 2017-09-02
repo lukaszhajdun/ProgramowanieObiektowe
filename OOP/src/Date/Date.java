@@ -75,7 +75,7 @@ public class Date {
 
         sb.append("/");
         //Rok
-        if (_year < 10)
+        if (_year == 0)
             sb.append("0").append(_year);
         else
             sb.append(_year);
