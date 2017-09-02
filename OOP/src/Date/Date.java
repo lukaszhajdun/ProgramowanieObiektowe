@@ -43,17 +43,18 @@ public class Date {
     public void setDate(int day, int month, int year){
         if (day >0 && day <= 31)
             _day = day;
-        else _day = 0;
+        else
+            _day = 0;
 
-        if (month > 0 && month <=12)
+        if (month >0 && month <= 12)
             _month = month;
-        else _month = 0;
+        else
+            _month = 0;
 
-        if (year >= 1900 && year <= 9999)
+        if(year >= 1900 && year <=9999)
             _year = year;
         else
             _year = 0;
-
     }
 
     public String toString(){
@@ -74,7 +75,10 @@ public class Date {
 
         sb.append("/");
         //Rok
-        sb.append(_year);
+        if (_year < 10)
+            sb.append("0").append(_year);
+        else
+            sb.append(_year);
 
         return sb.toString();
 
