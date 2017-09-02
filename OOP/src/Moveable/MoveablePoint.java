@@ -6,7 +6,7 @@ public class MoveablePoint implements IMoveable {
     int y;
     int xSpeed;
     int ySpeed;
-    
+
 
     public MoveablePoint(int x, int y, int xSpeed, int ySpeed){
         this.x = x;
