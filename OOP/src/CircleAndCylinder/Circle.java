@@ -38,6 +38,6 @@ public class Circle {
     }
 
     public String toString(){
-        return String.format("Circle.Circle[radius=%f,color=%s]", _radius, _color);
+        return String.format("Circle.Circle[radius=%.2f,color=%s]", _radius, _color);
     }
 }

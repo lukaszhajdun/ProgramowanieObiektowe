@@ -25,7 +25,13 @@ public class Cylinder extends Circle {
         _height = height;
     }
     public double getVolume(){
-        return super.getArea()*_height;
+
+        return getArea() * _height;
+    }
+
+    public String toString(){
+        return String.format("Cylinder[radius=%.2f,color=%s,height=%.2f]"
+                , super.getRadius(), super.getColor(), _height);
     }
 
 }
