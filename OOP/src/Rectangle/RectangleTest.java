@@ -5,9 +5,6 @@ import org.junit.Test;
 
 import static org.junit.Assert.*;
 
-/**
- * Created by Kroolik on 2017-09-03.
- */
 public class RectangleTest {
     Rectangle rectangle = new Rectangle(4.5f, 3.5f);
 
