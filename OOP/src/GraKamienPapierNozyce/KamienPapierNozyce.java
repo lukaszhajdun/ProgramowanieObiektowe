@@ -35,7 +35,7 @@ public class KamienPapierNozyce {
             switch (decision.toLowerCase()){
                 case "n":
                     playerMove = GameMoves.NOZYCE;
-                    System.out.printf("Wybrałeś nożyce\n\n");
+                    System.out.printf("Wybrałeś nożyce\n");
                     break;
                 case "k":
                     playerMove = GameMoves.KAMIEN;
@@ -47,7 +47,7 @@ public class KamienPapierNozyce {
                     break;
                 case "q":
                     playerMove = GameMoves.EXIT;
-                    System.out.println("Zakończyłeś grę");
+                    System.out.println("Zakończyłeś grę\n");
                     break;
                 default:
                     continue;
@@ -88,9 +88,9 @@ public class KamienPapierNozyce {
         System.out.println();
         System.out.printf(
                 "Wziąłeś udział w %d potyczkach.\n" +
-                "Wygrałeś: %d razy (%f).\n" +
-                "Przegrałeś: %d razy (%f)\n" +
-                "Zremisowałeś %d razy (%f)\n",
+                "Wygrałeś: %d razy (%.2f).\n" +
+                "Przegrałeś: %d razy (%.2f)\n" +
+                "Zremisowałeś %d razy (%.2f)\n",
                 liczbaGier, zwyciestwa, (double)zwyciestwa/liczbaGier*100,
                 porazki, (double)porazki/liczbaGier*100,
                 remisy, (double)remisy/liczbaGier*100);
