@@ -37,11 +37,9 @@ public class MoveableCircle implements IMoveable {
         _center.moveRight();
     }
     public String toString(){
-        int x =_center.x;
-        int y =_center.y;
 
         return
-                String.format("Circle[radius=%d, center=(%d,%d)]",_radius, x, y);
+                String.format("Circle[radius=%d, center=(%d,%d)]",_radius, _center.x, _center.y);
     }
 
 }
