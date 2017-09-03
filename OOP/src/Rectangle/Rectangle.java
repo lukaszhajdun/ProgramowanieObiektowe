@@ -34,7 +34,7 @@ public class Rectangle {
     }
 
     public String toString(){
-        return String.format("Rectangle.Rectangle[length=%f,width=%f]", _length,_width);
+        return String.format("Rectangle[length=%.2f,width=%.2f]", _length,_width);
     }
 
 
