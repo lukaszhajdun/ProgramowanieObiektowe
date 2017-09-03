@@ -7,10 +7,15 @@ public class MoveableCircle implements IMoveable {
 
     public MoveableCircle(int x, int y, int xSpeed, int ySpeed, int radius){
         _center = new MoveablePoint(x,y,xSpeed,ySpeed);
+
+
         _radius = radius;
 
 
+
     }
+
+
 
     @Override
     public void moveUp() {
@@ -32,7 +37,11 @@ public class MoveableCircle implements IMoveable {
         _center.moveRight();
     }
     public String toString(){
-        return String.format("MyCircle[radius=%d, %d]",_radius, _center);
+        int x =_center.x;
+        int y =_center.y;
+
+        return
+                String.format("Circle[radius=%d, center=(%d,%d)]",_radius, x, y);
     }
 
 }
